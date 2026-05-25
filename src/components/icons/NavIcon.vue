@@ -13,8 +13,8 @@ defineProps({
       class="rounded-full transition-all duration-300"
       :class="
         active
-          ? 'h-2.5 w-2.5 bg-accent shadow-[0_0_8px_rgba(214,199,161,0.75),0_0_16px_rgba(214,199,161,0.35)]'
-          : 'h-2 w-2 border border-muted bg-transparent group-hover:border-accent/50'
+          ? 'h-2.5 w-2.5 bg-fg'
+          : 'h-2 w-2 border border-soft bg-transparent group-hover:border-fg/60'
       "
     />
   </span>

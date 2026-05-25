@@ -1,12 +1,12 @@
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch, toValue } from 'vue'
 
 /**
  * Theo dõi section đang hiển thị và scroll tới section khi click nav.
- * @param {string[]} sectionIds
+ * @param {import('vue').MaybeRefOrGetter<string[]>} sectionIdsSource
  * @param {import('vue').Ref<HTMLElement | null>} scrollRootRef
  */
-export function useScrollSpy(sectionIds, scrollRootRef) {
-  const activeSection = ref(sectionIds[0] ?? 'summary')
+export function useScrollSpy(sectionIdsSource, scrollRootRef) {
+  const activeSection = ref(toValue(sectionIdsSource)[0] ?? 'summary')
 
   function getScrollRoot() {
     const el = scrollRootRef.value
@@ -28,8 +28,10 @@ export function useScrollSpy(sectionIds, scrollRootRef) {
 
   let observer = null
 
-  onMounted(() => {
+  function bindObserver() {
+    observer?.disconnect()
     const root = getScrollRoot()
+    const sectionIds = toValue(sectionIdsSource)
 
     observer = new IntersectionObserver(
       (entries) => {
@@ -52,6 +54,14 @@ export function useScrollSpy(sectionIds, scrollRootRef) {
       const el = document.getElementById(id)
       if (el) observer.observe(el)
     })
+  }
+
+  onMounted(() => {
+    bindObserver()
+  })
+
+  watch(sectionIdsSource, () => {
+    bindObserver()
   })
 
   onUnmounted(() => observer?.disconnect())

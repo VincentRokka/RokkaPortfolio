@@ -1,6 +1,34 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
+    <script>
+      (function () {
+        var THEME_KEY = 'portfolio-theme'
+        var LOCALE_KEY = 'portfolio-locale'
+        var h = new Date().getHours()
+        var themeStored = null
+        var localeStored = null
+        try {
+          themeStored = localStorage.getItem(THEME_KEY)
+          localeStored = localStorage.getItem(LOCALE_KEY)
+        } catch (e) {}
+        var theme =
+          themeStored === 'day' || themeStored === 'night'
+            ? themeStored
+            : h >= 6 && h < 18
+              ? 'day'
+              : 'night'
+        var locale =
+          localeStored === 'eng' ||
+          localeStored === 'kor' ||
+          localeStored === 'vie'
+            ? localeStored
+            : 'eng'
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.lang =
+          locale === 'kor' ? 'ko' : locale === 'vie' ? 'vi' : 'en'
+      })()
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -16,7 +16,7 @@ defineProps({
         :href="link.href"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-muted transition-colors hover:text-accent"
+        class="text-inherit transition-colors hover:text-accent"
         :aria-label="link.name"
       >
         <SocialIcon :icon="link.icon" />
