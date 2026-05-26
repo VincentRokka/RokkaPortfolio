@@ -13,7 +13,7 @@
 /* Ban ngày — panel trắng, viền mịn hòa nền #F5F5F5, đáy halo nhẹ */
 html[data-theme='day'] {
   --theme-canvas: #f5f5f5;
-  --theme-panel: #ffffff;
+  --theme-panel: #e8e8e8;
   --theme-fg: #000000;
   --theme-soft: #2b2b2b;
   --theme-muted: #4a4a4a;
