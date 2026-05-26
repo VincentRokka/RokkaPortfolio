@@ -45,7 +45,7 @@ export const messages = {
       themeToggleToNight: 'Switch to night mode',
     },
     profile: {
-      name: 'Rokka',
+      name: 'TRAN THANH LOC (Rokka)',
       title: 'Fullstack .Net Developer',
       tagline:
         'Building and maintaining business-oriented software with C# .NET.',
@@ -88,7 +88,7 @@ export const messages = {
       themeToggleToNight: '야간 모드로 전환',
     },
     profile: {
-      name: 'Rokka',
+      name: 'TRAN THANH LOC (Rokka)',
       title: '풀스택 .NET 개발자',
       tagline: 'C# 및 .NET으로 비즈니스 중심 소프트웨어를 구축하고 유지합니다.',
       avatar: '/images/profile.png',
@@ -130,7 +130,7 @@ export const messages = {
       themeToggleToNight: 'Chuyển chế độ ban đêm',
     },
     profile: {
-      name: 'Rokka',
+      name: 'TRAN THANH LOC (Rokka)',
       title: 'Lập trình viên Fullstack .Net',
       tagline:
         'Xây dựng và duy trì phần mềm hướng nghiệp vụ với C# và .NET.',

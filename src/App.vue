@@ -3,6 +3,8 @@ import { ref, computed } from 'vue'
 import ProfilePhoto from './components/ProfilePhoto.vue'
 import SidebarNav from './components/SidebarNav.vue'
 import SocialLinks from './components/SocialLinks.vue'
+import LanguageSelect from './components/LanguageSelect.vue'
+import ThemeToggle from './components/ThemeToggle.vue'
 import SummarySection from './components/sections/SummarySection.vue'
 import ExperienceSection from './components/sections/ExperienceSection.vue'
 import SkillsSection from './components/sections/SkillsSection.vue'
@@ -50,7 +52,9 @@ const navActiveSection = computed(() => {
               :src="content.profile.avatar"
               :alt="content.profile.avatarAlt"
             />
-            <h1 class="text-4xl font-bold leading-tight tracking-tight text-fg sm:text-5xl">
+            <h1
+              class="max-w-full text-center text-[clamp(1.125rem,2.5vw,1.625rem)] font-bold leading-tight tracking-tight whitespace-nowrap text-fg"
+            >
               {{ content.profile.name }}
             </h1>
             <p class="mt-3 text-lg font-medium leading-snug text-fg sm:text-xl">
@@ -81,8 +85,17 @@ const navActiveSection = computed(() => {
       <!-- Sidebar phải (Summary, Skills, Experience) -->
       <div
         ref="scrollRoot"
-        class="scroll-smooth lg:h-[calc(100vh-3rem)] lg:flex-1 lg:snap-y lg:snap-mandatory lg:overflow-y-auto"
+        class="relative scroll-smooth lg:h-[calc(100vh-3rem)] lg:flex-1 lg:snap-y lg:snap-mandatory lg:overflow-y-auto"
       >
+        <div
+          class="content-toolbar sticky top-4 z-20 -mb-14 flex justify-end gap-2 px-8 pointer-events-none sm:px-10 lg:top-6 lg:px-12"
+        >
+          <div class="pointer-events-auto flex items-center gap-2">
+            <ThemeToggle />
+            <LanguageSelect />
+          </div>
+        </div>
+
         <div class="flex flex-col gap-5 lg:gap-6">
           <SummarySection
             :heading="content.sections.summaryHeading"
