@@ -69,7 +69,7 @@ export const messages = {
       skills: 'Skills content will be added soon.',
     },
     summaryParagraphs: [
-      `I'm Fullstack .NET Developer with 4 years of experience in building and maintaining software applications using C# .NET technologies. Good understanding of <span class="hl">business-oriented software design</span>. Experienced in project deployment and team coordination with 2 years of hands-on project management experience.`,
+      `I'm Fullstack .NET Developer with 4 years of experience in building and maintaining software applications using C# .NET technologies. Good understanding of <span class="hl">business-oriented software design</span>. Experienced in project deployment, team coordination with 2 years of hands-on project management and certified as an excellent employee of the company.`,
       `Currently highly fascinated by <span class="hl">Applied AI</span>, passionate about learning <span class="hl">new languages and technologies</span>. I'm recognized as a collaborative and approachable team member who actively supports colleagues and partners in both small and large-scale projects.`,
     ],
     experienceItems: experienceByLocale.eng,
@@ -111,7 +111,7 @@ export const messages = {
       skills: '기술 내용이 곧 추가됩니다.',
     },
     summaryParagraphs: [
-      `C# 및 .NET 기술을 사용해 소프트웨어 애플리케이션을 구축·유지해 온 4년 경력의 풀스택 .NET 개발자입니다. <span class="hl">비즈니스 중심 소프트웨어 설계</span>에 대한 이해가 있습니다. 2년간의 실무 프로젝트 관리 경험을 바탕으로 배포와 팀 조율에도 익숙합니다.`,
+      `C# 및 .NET 기술을 사용해 소프트웨어 애플리케이션을 구축·유지해 온 4년 경력의 풀스택 .NET 개발자입니다. <span class="hl">비즈니스 중심 소프트웨어 설계</span>에 대한 이해가 있습니다. 프로젝트 배포, 팀 조율 경험이 있으며 2년간의 실무 프로젝트 관리 경험을 보유하고, 회사의 우수 사원으로 인증받았습니다.`,
       `현재 <span class="hl">응용 AI</span>에 깊은 관심을 가지고 있으며, <span class="hl">새로운 언어와 기술</span>을 배우는 데 열정적입니다. 소규모부터 대규모 프로젝트까지 동료와 파트너를 적극 지원하는 협업적이고 다가가기 쉬운 팀원으로 인정받고 있습니다.`,
     ],
     experienceItems: experienceByLocale.kor,
@@ -154,7 +154,7 @@ export const messages = {
       skills: 'Nội dung Kỹ năng sẽ được thêm sau.',
     },
     summaryParagraphs: [
-      `Tôi là Lập trình viên Fullstack .NET với 4 năm kinh nghiệm xây dựng và duy trì ứng dụng phần mềm bằng C# và .NET. Hiểu rõ <span class="hl">thiết kế phần mềm hướng nghiệp vụ</span>. Có kinh nghiệm triển khai dự án và điều phối nhóm với 2 năm quản lý dự án thực tế.`,
+      `Tôi là Lập trình viên Fullstack .NET với 4 năm kinh nghiệm xây dựng và duy trì ứng dụng phần mềm bằng C# và .NET. Hiểu rõ <span class="hl">thiết kế phần mềm hướng nghiệp vụ</span>. Có kinh nghiệm triển khai dự án, điều phối nhóm với 2 năm quản lý dự án thực tế và được chứng nhận là nhân viên xuất sắc của công ty.`,
       `Hiện rất quan tâm đến <span class="hl">AI ứng dụng</span>, đam mê học <span class="hl">ngôn ngữ và công nghệ mới</span>. Được đồng nghiệp đánh giá là thành viên hợp tác, dễ gần, hỗ trợ tích cực trong các dự án nhỏ và lớn.`,
     ],
     experienceItems: experienceByLocale.vie,
