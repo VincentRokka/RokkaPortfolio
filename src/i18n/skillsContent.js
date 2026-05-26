@@ -12,20 +12,20 @@ export const educationByLocale = {
     period: '8/2019 - 11/2022',
     highlights: [
       'Graduated <span class="hl">1 year Earlier</span>',
-      'GPA: 3.27',
+      'GPA: 3.27/4.0',
     ],
   },
   kor: {
     degree: '소프트웨어 공학 학사',
     school: '하노이 산업대학교',
     period: '8/2019 - 11/2022',
-    highlights: ['<span class="hl">1년 조기</span> 졸업', 'GPA: 3.27'],
+    highlights: ['<span class="hl">1년 조기</span> 졸업', 'GPA: 3.27/4.0'],
   },
   vie: {
     degree: 'Cử nhân Kỹ thuật Phần mềm',
     school: 'Đại học Công nghiệp Hà Nội',
     period: '8/2019 - 11/2022',
-    highlights: ['Tốt nghiệp sớm <span class="hl">1 năm</span>', 'GPA: 3.27'],
+    highlights: ['Tốt nghiệp sớm <span class="hl">1 năm</span>', 'GPA: 3.27/4.0'],
   },
 }
 

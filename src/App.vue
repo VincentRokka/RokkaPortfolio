@@ -32,7 +32,7 @@ const navActiveSection = computed(() => {
 </script>
 
 <template>
-  <!-- Theme: day #FFFFFF / panel #D1D1D1 — night #0B1020 -->
+  <!-- Theme: day panel #FFFFFF + viền L/R/B — night #0B1020 -->
   <div class="min-h-screen p-4 sm:p-5 lg:p-6">
     <div
       class="mx-auto flex max-w-7xl flex-col gap-5 lg:min-h-[calc(100vh-3rem)] lg:flex-row lg:gap-6"

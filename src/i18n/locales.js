@@ -48,7 +48,7 @@ export const messages = {
       name: 'Rokka',
       title: 'Fullstack .Net Developer',
       tagline:
-        'Building and maintaining business-oriented software with C# and .NET.',
+        'Building and maintaining business-oriented software with C# .NET.',
       avatar: '/images/profile.png',
       avatarAlt: 'Rokka — profile photo',
     },
@@ -69,7 +69,7 @@ export const messages = {
       skills: 'Skills content will be added soon.',
     },
     summaryParagraphs: [
-      `I'm Fullstack .NET Developer with 4 years of experience in building and maintaining software applications using C# and .NET technologies. Good understanding of <span class="hl">business-oriented software design</span>. Experienced in project deployment and team coordination with 2 years of hands-on project management experience.`,
+      `I'm Fullstack .NET Developer with 4 years of experience in building and maintaining software applications using C# .NET technologies. Good understanding of <span class="hl">business-oriented software design</span>. Experienced in project deployment and team coordination with 2 years of hands-on project management experience.`,
       `Currently highly fascinated by <span class="hl">Applied AI</span>, passionate about learning <span class="hl">new languages and technologies</span>. I'm recognized as a collaborative and approachable team member who actively supports colleagues and partners in both small and large-scale projects.`,
     ],
     experienceItems: experienceByLocale.eng,

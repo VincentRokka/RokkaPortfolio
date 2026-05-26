@@ -27,7 +27,7 @@ defineProps({
       :alt="alt"
       width="176"
       height="192"
-      class="h-48 w-44 rounded-2xl object-cover object-[center_18%] shadow-lg ring-1 ring-accent/25 sm:h-52 sm:w-48"
+      class="profile-photo h-48 w-44 rounded-2xl object-cover object-[center_18%] sm:h-52 sm:w-48"
       loading="eager"
       decoding="async"
     />
